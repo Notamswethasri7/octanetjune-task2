@@ -6,7 +6,7 @@
     <title>Login Page</title>
     <style>
         body {
-            background-image:url(lock.png);
+            background-image: url(lock.png);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,7 +18,7 @@
         }
 
         .login-container {
-            background-color:pink;
+            background-color: pink;
             background-size: cover;
             background-position: center;
             padding: 20px;
@@ -75,7 +75,6 @@
     </style>
 </head>
 <body>
-   
     <div class="login-container">
         <h2>Login</h2>
         <form id="loginForm">
@@ -97,10 +96,10 @@
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
 
-            // Simple validation
+           
             if (username === 'user' && password === 'pass') {
                 alert('Login successful!');
-                // Redirect to another page or perform further actions here
+                window.location.href = 'todo.html'; // Redirect to home page
             } else {
                 var errorMessage = document.getElementById('errorMessage');
                 errorMessage.textContent = 'Invalid username or password.';
